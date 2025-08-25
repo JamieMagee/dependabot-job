@@ -1,0 +1,32 @@
+{
+  "package_manager": "bundler",
+  "debug": null,
+  "dependencies": null,
+  "source": {
+    "provider": "github",
+    "repo": "test/repo",
+    "directory": "/src"
+  },
+  "allowed_updates": [
+    {
+      "update_type": "all"
+    }
+  ],
+  "dependency_groups": [
+    {
+      "name": "security",
+      "applies_to": "security-updates"
+    },
+    {
+      "name": "version",
+      "applies_to": "version-updates"
+    }
+  ],
+  "ignore_conditions": [
+    {
+      "dependency_name": "System.*"
+    }
+  ],
+  "security_updates_only": false,
+  "requirements_update_strategy": "bump_versions"
+}
